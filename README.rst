@@ -1,6 +1,4 @@
-*****
 Day 1
-*****
 
 Maybe we should start at 8?
 
@@ -23,9 +21,7 @@ Iron horse invitation?
 
 
 
-*****
 Day 2
-*****
 
 ====== =========== ============
  Time   Presenter   Topic
