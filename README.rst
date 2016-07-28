@@ -12,7 +12,7 @@ Day 1
 11.00              Break
 11.15  Christian   data.table
 01.00              Break
-02.00  Brice       Intermediate topics in R: Installing to local repositories, stand-alone scripts, functions, parallelization, exception handling, etc. 
+02.00  Brice       Intermediate topics in R: Installing to local repositories, stand-alone scripts, functions, parallelization (and when to invoke garbage collection), exception handling, etc. 
 03.45  SAmish?      
 04.30              Break
 04.45  Tiago       Introducing the Python environment
