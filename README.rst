@@ -8,7 +8,7 @@ Day 1
  Time   Presenter   Topic
 ====== =========== ============
 8.30   Tiago       Introduction and DBS Scientific computing architecture
-9.00   Brice       Useful Unix tools (user profiles, persistent shells, parallelization, etc.), thinking about 0/1-based indexing for genomics, submission to the SRA
+9.00   Brice       Useful Unix tools (user profiles, persistent shells, parallelization, evaluating available resources, etc.), thinking about 0/1-based indexing for genomics, submission to the SRA
 11.00              Break
 11.15  Christian   data.table
 01.00              Break
