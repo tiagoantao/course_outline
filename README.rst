@@ -34,7 +34,7 @@ Day 2
 11.00              Break
 11.15  Tiago       Parallel processing with Dask
 01.00              Break
-02.00  Erica?
+02.00  Nathanael?
 02.30  Dan?
 03.00              Break
 03.15  Tiago
