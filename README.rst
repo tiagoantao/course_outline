@@ -35,7 +35,7 @@ Day 2
 11.15  Tiago       Parallel processing with Dask, subsampling
 01.00              Break
 02.00  Nathanael?
-02.45
+02.45  who?
 03.15              Break
 03.30  Tiago       Galaxy programmatic interface
 05.30  End
