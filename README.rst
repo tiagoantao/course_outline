@@ -10,12 +10,12 @@ Day 1
 8.30   Tiago       Introduction and DBS Scientific computing architecture
 9.00   Brice       Useful Unix tools (user profiles, persistent shells, parallelization, evaluating available resources, etc.), thinking about 0/1-based indexing for genomics, submission to the SRA
 11.00              Break
-11.15  Christian   data.table
+11.15  Travis      ???
 01.00              Break
 02.00  Brice       Intermediate topics in R: Installing to local repositories, stand-alone scripts, functions, parallelization (and when to invoke garbage collection), exception handling, etc. 
-03.45  SAmish?      
+03.45  Christian   data.table?      
 04.30              Break
-04.45  Tiago       Introducing the Python environment
+04.45  Tiago       Introducing the Python environment (Jupyter lab, matplotlib, Python3, conda)
 05.30              End
 ====== =========== ============
 
@@ -32,12 +32,12 @@ Day 2
 08.30  Brice       R: Wrap up
 09.15  Tiago       Data preprocessing (HDF5, VCF)
 11.00              Break
-11.15  Tiago       Parallel processing with Dask
+11.15  Tiago       Parallel processing with Dask, subsampling
 01.00              Break
 02.00  Nathanael?
 02.30  Dan?
 03.00              Break
-03.15  Tiago
+03.15  Tiago       Galaxy programmatic interface
 04.30  External?
 05.15  External?
 05.30  End
