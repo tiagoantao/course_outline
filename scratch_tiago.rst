@@ -2,7 +2,8 @@ Online content
 ==============
 
 - `github repo`_
-- `Docker hub`
+- notebooks_
+- Docker hub
 - `course documentation`_
 - `Genomics core`_
   - Explain what will be available
@@ -89,3 +90,8 @@ UMontana DBS specific stuff
   - Cluster (network transparency)
   - space on core server
   - GPU
+
+.. _`github repo`: https://github.com/tiagoantao/data-science-teaching
+.. _notebooks: http://nbviewer.jupyter.org/github/tiagoantao/data-science-teaching/blob/master/notebooks/Index.ipynb
+.. _`course documentation`: https://github.com/tiagoantao/data-science-teaching
+.. _`Genomics core`: http://hs.umt.edu/dbs/labs/genomics/
