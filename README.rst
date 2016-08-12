@@ -7,7 +7,7 @@ Day 1
 ====== =========== ============
  Time   Presenter   Topic
 ====== =========== ============
-8.30   Tiago       Introduction and DBS Scientific computing architecture
+8.30   Tiago_      Introduction and DBS Scientific computing architecture
 9.00   Brice       Useful Unix tools (user profiles, persistent shells, parallelization, evaluating available resources, etc.), thinking about 0/1-based indexing for genomics, submission to the SRA
 11.00              Break
 11.15  Travis      ???
@@ -18,9 +18,6 @@ Day 1
 04.45  Tiago       Introducing the Python environment (Jupyter lab, matplotlib, Python3, conda)
 05.30              End
 ====== =========== ============
-
-Iron horse invitation?
-
 
 -----
 Day 2
@@ -40,3 +37,5 @@ Day 2
 03.30  Tiago       Galaxy programmatic interface
 05.30  End
 ====== =========== ============
+
+.. _Tiago: scratch_tiago.rst
