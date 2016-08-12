@@ -32,6 +32,9 @@ Data management
 - Very light introduction to the dataset
 
   - Whole Genome Sequencing of mosquitoes
+
+- Data downloading
+
 - Meta-data exploration
 
   - matplotlib
