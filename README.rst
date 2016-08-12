@@ -12,7 +12,7 @@ Day 1
 11.00              Break
 11.15  Travis      ???
 01.00              Break
-02.00  Brice       Intermediate topics in R: Installing to local repositories, stand-alone scripts, functions, parallelization (and when to invoke garbage collection), exception handling, etc. 
+02.00  Brice       Intermediate topics in R: Installing to local repositories, stand-alone scripts, functions, environments, parallelization (and when to invoke garbage collection), condition handling, etc. 
 03.45  Christian   data.table?      
 04.30              Break
 04.45  Tiago       Introducing the Python environment (Jupyter lab, matplotlib, Python3, conda)
