@@ -92,6 +92,7 @@ UMontana DBS specific stuff
 
       - architecture (LDAP, Cluster, Galaxy)
       - access
+      
         - Galaxy
         - ssh
         - Jupyter
