@@ -10,7 +10,7 @@ Day 1
 8.30   Tiago_      Introduction and DBS Scientific computing architecture
 9.00   Brice       Useful Unix tools (user profiles, persistent shells, parallelization, evaluating available resources, etc.), thinking about 0/1-based indexing for genomics, submission to the SRA
 11.00              Break
-11.15  Travis      ???
+11.15  Travis      Efficient computing, and how terminal commands can simplify your life
 01.00              Break
 02.00  Brice       Intermediate topics in R: Installing to local repositories, stand-alone scripts, functions, environments, parallelization (and when to invoke garbage collection), condition handling, etc. 
 03.45  Christian   R data.table: Big Fast Data
