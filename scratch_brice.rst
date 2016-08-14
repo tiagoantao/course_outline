@@ -3,8 +3,13 @@ Make sure to bring your computers! There will be lots of token examples to try.
 Selected Unix topics
 ======
 - Profiles
-     - order of execution
-     - common things to add
+     - Order of execution
+     - Common things to add (e.g., coloring, aliases)
+     - Adding to your $PATH (and exporting variables)
+- Passwordless SSH
+      - ssh-keygen
+      - transfer a public key
+      - setting permissions (refresher)
 
 - Currently Finalizing.
 
