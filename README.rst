@@ -8,11 +8,11 @@ Day 1
  Time   Presenter   Topic
 ====== =========== ============
 8.30   Tiago_      Introduction and DBS Scientific computing architecture
-9.00   Brice_       Useful Unix tools (user profiles, persistent shells, parallelization, evaluating available resources, etc.), thinking about 0/1-based indexing for genomics, submission to the SRA
+9.00   Brice_      Selected Unix topics: user profiles, persistent shells, parallelization, evaluating available resources, submission to the SRA, etc.
 11.00              Break
 11.15  Travis      Efficient computing, and how terminal commands can simplify your life
 01.00              Break
-02.00  Brice       Intermediate topics in R: Installing to local repositories, stand-alone scripts, functions, environments, parallelization (and when to invoke garbage collection), condition handling, etc. 
+02.00  Brice       Selected R topics: Installing to local repositories, functions, environments, parallelization, condition handling, etc. 
 03.45  Christian   R data.table: Big Fast Data
 04.30              Break
 04.45  Tiago       Introducing the Python environment (Jupyter lab, matplotlib, Python3, conda)
