@@ -10,8 +10,19 @@ Selected Unix topics
       - ssh-keygen
       - transfer a public key
       - setting permissions (refresher)
-
-- Currently Finalizing.
+- Evaluating available resources
+      - CPUs
+      - Memory
+      - Storage
+- Persistent shells (and related topics)
+      - Moving processes into the background
+      - nohup
+      - screen
+      - tmux
+- Parallelization
+      - Background processes
+      - Multiple shells
+      - GNU parallel
 
 Selected R topics
 ======
