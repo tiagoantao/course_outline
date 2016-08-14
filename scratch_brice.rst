@@ -25,7 +25,7 @@ Selected R topics
 - Condition handling
     - try()
     - tryCatch()
-  - Figuring out where something broke
+    - Figuring out where something broke
 - Speeding things up
     - Loops vs. vector operations
     - The benefits of apply and related functions
