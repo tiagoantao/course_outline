@@ -20,7 +20,7 @@ Selected R topics
 - Functions and environments
     - Structure
     - Operations
-   - Arguments
+    - Arguments
     - Scoping and inheritance
 - Condition handling
     - try()
