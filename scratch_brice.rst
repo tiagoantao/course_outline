@@ -2,6 +2,10 @@ Make sure to bring your computers! There will be lots of token examples to try.
 
 Selected Unix topics
 ======
+- Profiles
+     - order of execution
+     - common things to add
+
 - Currently Finalizing.
 
 Selected R topics
