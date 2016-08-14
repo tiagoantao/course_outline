@@ -26,7 +26,7 @@ Day 2
 ====== =========== ============
  Time   Presenter   Topic
 ====== =========== ============
-08.30  Brice       R: Wrap up
+08.30  Brice       R: Wrap up and case study examples
 09.15  Tiago       Data preprocessing (HDF5, VCF)
 11.00              Break
 11.15  Tiago       Parallel processing with Dask, subsampling
