@@ -15,6 +15,7 @@ Selected Unix topics
       - Memory
       - Storage
       - top and htop
+      - du
 - Persistent shells (and related topics)
       - Moving processes into the background
       - nohup
