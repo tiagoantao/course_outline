@@ -8,8 +8,7 @@ Skaggs building, 114.
 Requirements
 ------------
 
-If you want to follow along, please bring a laptop with R (first day). Software for the second day will be discussed
-at the end of the first day.
+If you want to follow along, please bring a laptop with R (first day) and a SSH client. Software for the second day will be discussed at the end of the first day.
 
 -----
 Day 1
