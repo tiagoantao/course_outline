@@ -1,3 +1,9 @@
+-----
+Venue
+-----
+
+Skaggs building, 114.
+
 ------------
 Requirements
 ------------
