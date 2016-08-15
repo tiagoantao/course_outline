@@ -1,8 +1,14 @@
+------------
+Requirements
+------------
+
+If you want to follow along, please bring a laptop with R (first day). Software for the second day will be discussed
+at the end of the first day.
+
 -----
 Day 1
 -----
 
-**Maybe we should start at 8?**
 
 ====== =========== ============
  Time   Presenter   Topic
@@ -31,10 +37,10 @@ Day 2
 11.00              Break
 11.15  Tiago       Parallel processing with Dask, subsampling
 01.00              Break
-02.00  Nathanael?
-02.45  who?
-03.15              Break
-03.30  Tiago       Galaxy programmatic interface
+02.00  
+02.45  Doug        Montana code
+03.00              Break
+03.15  Tiago       Galaxy programmatic interface
 05.30  End
 ====== =========== ============
 
