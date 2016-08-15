@@ -24,7 +24,7 @@ Selected Unix topics
 - Parallelization
       - Background processes
       - Multiple shells
-      - GNU parallel
+      - GNU parallel (and how to play nice!)
 
 Selected R topics
 ======
