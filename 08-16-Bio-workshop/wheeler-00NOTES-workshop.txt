@@ -1,0 +1,172 @@
+Workshop 
+
+"Efficient computing, and how terminal commands can simplify your life"
+
+~~~~
+
+So you just downloaded a huge file. How do you deal with it?
+
+% cd ~/Dropbox/nimbletwist/2016/06-07-gencode-file
+
+% wc gencode.v24.annotation.gtf
+ 2572845 106816158 1249402843 gencode.v24.annotation.gtf
+
+how to even look at this thing?
+
+% less gencode.v24.annotation.gtf
+yuck
+
+% less -S gencode.v24.annotation.gtf
+ahhh...
+
+OK, so find all the OR8A1 exons
+% grep OR8A1 gencode.v24.annotation.gtf
+
+But see the third field - they're not all exons.
+Well ... maybe you can't see it, so copy/paste into a tool that doesn't 
+wordwrap ... or use a super useful concept in unix called the pipe:
+
+% grep OR8A1 gencode.v24.annotation.gtf | less -S 
+
+first, let me pare this input down to something more manageable:
+
+% grep -n OR8A1 gencode.v24.annotation.gtf
+
+% head -n 1500000 gencode.v24.annotation.gtf > /
+                              gencode.v24.annotation-head1.5m.gtf
+ wc to verify
+
+% tail -n 50000 gencode.v24.annotation-head1.5m.gtf >  /
+                              gencode.v24.annotation-part1.gtf
+
+now it's a little faster 
+% grep OR8A1 gencode.v24.annotation-part1.gtf 
+this is useful for sampling, as long as the data are random
+
+
+ok ... so if I want to show only exons, maybe I can use grep some more.
+Here's one way:
+
+
+% grep OR8A1 gencode.v24.annotation-part1.gtf | grep exon
+that doesn't work - why not?   the word 'exon' appears as part of 'exon_id'
+
+one way:
+% grep OR8A1 gencode.v24.annotation-part1.gtf | grep "exon "
+(nothing ... 'cause it's not a space character, it's a tab)
+
+% grep OR8A1 gencode.v24.annotation-part1.gtf | grep "exon\s"
+This gives the single line we're expecting. Yay.
+It also gives a hint of something called "regular expressions", 
+which I won't get into here - they let you find patterns, not specific strings
+
+~~~
+
+OK, so that's one way, using grep. Let me show you another way, using one of 
+my favorite tools: awk
+
+% awk '/OR8A1/' gencode.v24.annotation-part1.gtf
+
+% awk '/OR8A1/ {print $1,$4,$5,$3}' gencode.v24.annotation-part1.gtf
+
+% awk '/exon/ && /OR8A1/  {print $1,$4,$5,$3}' gencode.v24.annotation-part1.gtf
+ (notice, two lines are removed, but not all)
+
+% awk '$3~/exon/ && /OR8A1/  {print $1,$4,$5,$3}' gencode.v24.annotation-part1.gtf
+
+
+~~~~
+
+Another example, to show a couple more things:
+
+% head -n 250000 gencode.v24.annotation.gtf | tail -n 50000 > / 
+                                 gencode.v24.annotation-part2.gtf
+
+% awk '$3~/exon/ && /OBSCN/  {print $1,$4,$5,$3}' gencode.v24.annotation-part2.gtf 
+... uh ... how many?
+
+redirect to a file
+% awk '$3~/exon/ && /OBSCN/  {print $1,$4,$5,$3}' gencode.v24.annotation-part2.gtf  > obscn.lines.gtf
+
+now look at the entries. There repetition, e.g.  228377931
+What to do? How to remove redundancy?
+
+% awk '$3~/exon/ && /OBSCN/  {print $1,$4,$5,$3}' gencode.v24.annotation-part2.gtf | wc
+     466    1864   13980
+
+
+% awk '$3~/exon/ && /OBSCN/  {print $1,$4,$5,$3}' gencode.v24.annotation-part2.gtf | sort 
+see 228377931
+
+% awk '$3~/exon/ && /OBSCN/  {print $1,$4,$5,$3}' gencode.v24.annotation-part2.gtf | sort | uniq | wc
+FYI:  136 genes? That's crazy. 
+
+% awk '$3~/exon/ && /OBSCN/  {print $1,$4,$5,$3}' gencode.v24.annotation-part2.gtf | sort | uniq -c
+
+~~~~~~
+
+Parsing:
+
+You've run blast or HMMER. You want to parse the file, and just get a 
+few relevant things out of it:
+
+% cd /Users/traviswheeler/git/hmmer
+% src/hmmsearch --tblout globins.tbl tutorial/globins4.hmm tutorial/globins45.fa
+% vi globins.tbl
+% grep -v "#" globins.tbl
+
+How to trim down the printed columns?
+% awk '!/#/' globins.tbl
+% awk '!/#/ {print $1,"\t",$5}' globins.tbl
+
+
+But what if one of the names has a hash in it?
+% awk '!/^#/' globins-w-bad-name.tbl
+
+
+What if I want to trim to only matches better than 1e-60?
+% awk '!/^#/ && $5<1e-60 {print $1,"\t",$5}' globins-w-bad-name.tbl
+
+
+~~~
+
+awk is usually used for tabular data. Sometimes ok for partly-tabular, e.g.
+
+% vi  cne.1.L.maf
+
+This .maf file has multiple alignment blocks. Each one corresponds to an 
+alignable chunk of syntenic sequence across multiple species. We
+can piece together the human sequence with:
+$ awk '/hg19.chr1/'  cne.1.L.maf
+s hg19.chr1                          896298 6 + 249250621 CAGGTG
+s hg19.chr1                          896304 24 + 249250621 C-----G-----------GAGCGG-----GGTC--GGC---CCG-GAGTAG------
+s hg19.chr1                          896328 21 + 249250621 GTTCCCCACC------------------------CGCGCCCCGCG-----------
+s hg19.chr1                          896349 24 + 249250621 CGCC----CAGGACGCGAC--TCCC--------GCTG-----------C
+
+if I want to print out the start/stop (instead of length):
+
+$ awk '/hg19.chr1/ {print $3,$3+$4-1}' cne.1.L.maf
+
+~~~
+
+Consider the related bed file, hg19.bejscHumanCNE.bed, which shows an
+entry (one line) for each file in a directory, so that all the connected
+chunks line up as a single entry in the file. This is a dataset of conserved
+non-coding elements identified by Gill Bejerano.
+
+% vi hg19.bejscHumanCNE.bed
+
+I've seen a suggestion that a large fraction (maybe the majority?) of 
+CNEs are just pseudogenes - can't see them because of frameshift mutations.
+
+I have a dataset of sequences identified as pseudogenes 
+
+
+% vi pseudo-tantan-part.tab
+
+How to determine overlapping sections? 
+
+
+
+
+
