@@ -52,10 +52,10 @@ Day 2
 
 
 ------
-Links_
+Helpful Links_
 ------
 
 .. _Tiago: scratch_tiago.rst
 .. _Brice: scratch_brice.rst
 .. _Christian: http://prog.x14n.org/2016/08/16/data-table/
-.. _Links: Links.md
+.. _Helpful Links: Links.md
