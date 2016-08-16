@@ -46,7 +46,7 @@ Day 2
 02.45  Doug        Fundamentals workshop discussion with Montana Code School
 03.00              Break
 03.15  Tiago       Galaxy programmatic interface
-05.30  End
+05.00  End
 ====== =========== ============
 
 .. _Tiago: scratch_tiago.rst
