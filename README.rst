@@ -43,7 +43,7 @@ Day 2
 11.15  Tiago       Parallel processing with Dask, subsampling
 01.00              Break
 02.00  
-02.45  Doug        Montana code
+02.45  Doug        Fundamentals workshop discussion with Montana Code School
 03.00              Break
 03.15  Tiago       Galaxy programmatic interface
 05.30  End
