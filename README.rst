@@ -24,11 +24,14 @@ Day 1
 11.15  Travis      Efficient computing, and how terminal commands can simplify your life
 01.00              Break
 02.00  Brice       Selected R topics: Installing to local repositories, functions, environments, parallelization, condition handling, etc. 
-03.45  `Christian <http://prog.x14n.org/2016/08/16/data-table/>`  R data.table: Big Fast Data
+`Python <http://www.python.org/>`
 04.30              Break
 04.45  Tiago       Introducing the Python environment (Jupyter lab, matplotlib, Python3, conda)
 05.30              End
 ====== =========== ============
+
+
+03.45  `Christian <http://prog.x14n.org/2016/08/16/data-table/>`  R data.table: Big Fast Data
 
 -----
 Day 2
