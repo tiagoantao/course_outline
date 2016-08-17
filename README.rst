@@ -49,6 +49,16 @@ Day 2
 05.00  End
 ====== =========== ============
 
+------
+Links
+------
+- R
+
+  - `The R Inferno <http://www.burns-stat.com/documents/books/the-r-inferno/>`_: Fun and Informative. "If you are using R and you think you’re in hell, this is a map for you."
+  - `Google R style guide <https://google.github.io/styleguide/Rguide.xml>`_: Write cleaner code!
+  - `CRAN FAQs <https://cran.r-project.org/faqs.html>`_: Details, including OSX, Windows.
+  - `Advanced R <http://adv-r.had.co.nz/>`_: Superior R learning material from Hadley Wickham.
+
 .. _Tiago: scratch_tiago.rst
 .. _Brice: scratch_brice.rst
 .. _Christian: http://prog.x14n.org/2016/08/16/data-table/
